@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Diferença entre valores</h1>
+    <div id="resultado"></div>
+    <script>
+        let numero1 = Number(prompt("Digite um número"))
+        let numero2 = Number(prompt("Digite outro número"))
+
+        let diferenca = numero1 - numero2;
+        let diferenca2 = numero2 - numero1;
+
+        if (numero1 > numero2) {
+            resultado = numero1 - numero2
+            document.getElementById("resultado").innerHTML = "A diferença entre " + numero1 + " e " + numero2 + " é " + diferenca;
+        }
+
+        else if (numero1 < numero2) {
+            resultado = numero2 - numero1
+            document.getElementById("resultado").innerHTML = "A diferença entre " + numero2 + " e " + numero1 + " é " + diferenca2;
+        }
+
+        else {
+            document.getElementById("resultado").innerHTML =  "Os números são iguais";
+        }
+    </script>
+</body>
+</html>

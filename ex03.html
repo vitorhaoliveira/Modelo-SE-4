@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Pessoa mais nova</h1>
+    <div id="resultado"></div>
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa:");
+        let ano1 = Number(prompt("Digite o ano de nascimento:"));
+        let nome2 = prompt("Digite o nome da segunda pessoa:");
+        let ano2 = Number(prompt("Digite o ano de nascimento:"));
+
+        let anoAtual = 2023
+        let idade1 = anoAtual - ano1;
+        let idade2 = anoAtual - ano2;
+        
+
+        if (idade1 < idade2) {
+            resultado = nome1 + " é a pessoa mais nova, com " + idade1 + " anos";
+        } 
+        
+        else {
+            resultado = nome2 + " é a pessoa mais nova, com " + idade2 + " anos";
+        }
+
+        document.getElementById("resultado").innerHTML = resultado
+    </script>
+</body>
+</html>
